@@ -58,9 +58,6 @@ export default function InstructorDashboard() {
           <div className="text-sm text-zinc-600">
             @{instructor.username} • {instructor.department} • role: <b>{instructor.role}</b>
           </div>
-          {instructor.apiKey && (
-            <div className="text-sm mt-1">API key: <code>{instructor.apiKey}</code></div>
-          )}
         </div>
         <button onClick={logout} className="btn">Log out</button>
       </div>
